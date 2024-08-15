@@ -1,0 +1,86 @@
+/* Certifications Styles */
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: calc(100% - 50px); /* Adjusted to account for sidebar width */
+    margin: 20px auto; /* Centered with margin */
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 80%; /* Reduced width to avoid overlap */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 15px; /* Reduced padding */
+    background-color: white;
+    border-radius: 10px;
+    margin: 0 10px; /* Margin for spacing */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 1;
+    height: 300px; /* Reduced height */
+    overflow: auto; /* Scrollable content */
+}
+
+.carousel-item img {
+    width: 70%; /* Reduced width for better fit */
+    height: auto;
+    max-width: 250px; /* Limit image size */
+    border-radius: 10px;
+    margin-bottom: 10px; /* Reduced margin */
+}
+
+.carousel-item p {
+    margin: 8px 0;
+    font-size: 14px; /* Reduced font size */
+    color: #555;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px; /* Reduced padding */
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+    font-size: 18px; /* Reduced font size */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 35px; /* Reduced width */
+    height: 35px; /* Reduced height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-btn.left {
+    left: 15px; /* Adjusted positioning */
+}
+
+.carousel-btn.right {
+    right: 15px; /* Adjusted positioning */
+}
+
+.carousel-btn:hover {
+    background-color: #0056b3;
+}
+
+.carousel-btn:active {
+    transform: scale(0.9);
+}

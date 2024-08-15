@@ -1,0 +1,99 @@
+/* hireme.css */
+.box {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.education, .experience {
+    height: 350px; /* Overall reduced height of the sections */
+    overflow-y: auto; /* Allows scrolling if content overflows */
+    border: 2px solid #ddd;
+}
+
+.education {
+    background-color: #e6ffe6; /* Light green background for Education Details */
+}
+
+.experience {
+    background-color: #f0f8ff; /* Light blue background for Experience */
+}
+
+.resumes {
+    background-color: #fff; /* White background for Resumes */
+    padding: 20px;
+    border: 2px solid #ddd;
+}
+
+.arrow-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.left-arrow {
+    margin-right: 10px;
+}
+
+.right-arrow {
+    margin-left: 10px;
+}
+
+.education-list, .experience-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: calc(100% - 80px); /* Adjust width for arrows */
+}
+
+.education-item, .experience-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px; /* Increased padding */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff; /* White background for items */
+    height: 120px; /* Increased height for items */
+    box-sizing: border-box; /* Ensures padding and border are included in height */
+}
+
+.education-image, .experience-image {
+    width: 60px; /* Image size */
+    height: 60px; /* Image size */
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.education-info, .experience-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Added gap between text lines */
+}
+
+.resume-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.resume-link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.resume-link:hover {
+    text-decoration: underline;
+}

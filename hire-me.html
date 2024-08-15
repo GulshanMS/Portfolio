@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gulshan's Hire Me</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="hireme.css">
+</head>
+<body>
+<div class="container">
+    <div class="sidebar">
+        <!-- Arrow Toggle Button -->
+        <button class="arrow-toggle" onclick="toggleSidebar()">&#9664;</button>
+        <ul class="nav-list">
+            <li><a href="index.html" class="nav-item">Home</a></li>
+            <li><a href="projects.html" class="nav-item">Projects</a></li>
+            <li><a href="contact.html" class="nav-item">Contact</a></li>
+            <li><a href="certifications.html" class="nav-item">Certifications</a></li>
+            <li><a href="hire-me.html" class="nav-item">Hire Me</a></li>
+        </ul>
+    </div>
+    <main>
+        <section id="hire-me" class="section">
+            <div class="box education">
+                <h2>Education Details</h2>
+                <div class="arrow-container">
+                    <button class="arrow-btn left-arrow" onclick="moveEducation(-1)">&#9664;</button>
+                    <div class="education-list">
+                        <!-- Education items -->
+                        <div class="education-item">
+                            <img src="https://alchetron.com/cdn/siddaganga-matha-bdf2cceb-39b1-4d22-8713-5b43ab0d023-resize-750.jpeg" alt="School Logo" class="education-image">
+                            <div class="education-info">
+                                <h3>S.S.R.H.S.S</h3>
+                                <p>Percentage :<b>89.6</b></p>
+                                <p>Year of Completion <b>2019</b></p>
+                            </div>
+                        </div>
+                        <div class="education-item">
+                            <img src="https://collegemarker.com/college_images/53830237_393750344772304_6480144990033936384_n.jpg" alt="School Logo" class="education-image">
+                            <div class="education-info">
+                                <h3>The Master's PU College</h3>
+                                <p>Percentage : <b>93.6</b></p>
+                                <p>Year of Completion : <b>2021</b></p>
+                            </div>
+                        </div>
+                        <div class="education-item">
+                            <img src="https://alchetron.com/cdn/global-academy-of-technology-e5f34ca5-3daa-4ee1-8e86-275051fe517-resize-750.jpg" alt="School Logo" class="education-image">
+                            <div class="education-info">
+                                <h3>Global Academy of Technology</h3>
+                                <p>CGPA : <B>9.72</B></p>
+                                <p>Year of Completion : <b>2025</b></p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="arrow-btn right-arrow" onclick="moveEducation(1)">&#9654;</button>
+                </div>
+            </div>
+            <div class="box experience">
+                <h2>Experience</h2>
+                <div class="arrow-container">
+                    <button class="arrow-btn left-arrow" onclick="moveExperience(-1)">&#9664;</button>
+                    <div class="experience-list">
+                        <!-- Experience items -->
+                        <div class="experience-item">
+                            <img src="https://media-maa2-1.cdn.whatsapp.net/v/t61.24694-24/405300763_361103419877365_9048506847455106008_n.jpg?ccb=11-4&oh=01_Q5AaIO2oN4mtQdLA0u9nAVsRttJIU-qbYIOVBaa5YZLOvPbn&oe=66CB9C72&_nc_sid=5e03e0&_nc_cat=110" alt="Company Logo" class="experience-image">
+                            <div class="experience-info">
+                                <h3>ISE -Student Club</h3>
+                                <p>Head</p>
+                                <p>2023 to Present </p>
+                            </div>
+                        </div>
+                        <div class="experience-item">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP5QFgzztEDyxvC85PnViRMdU4qKlGeJaoDM0hMiMaglWpYwAVjl_gJjFr07bRKsyFsfc&usqp=CAU" alt="Company Logo" class="experience-image">
+                            <div class="experience-info">
+                                <h3>NITK</h3>
+                                <p>Team Head</p>
+                                <p>2023-2024</p>
+                            </div>
+                        </div>
+                        <!-- More experience items can be added here -->
+                    </div>
+                    <button class="arrow-btn right-arrow" onclick="moveExperience(1)">&#9654;</button>
+                </div>
+            </div>
+            <div class="box resumes">
+                <h2>Resumes</h2>
+                <div class="resume-list">
+                    <!-- Resume links -->
+                    <div class="resume-item">
+                        <a href="Certicates/1GA21IS089_GULSHAN.pdf" class="resume-link">Resume 1</a>
+                    </div>
+                    <div class="resume-item">
+                        <a href="Certicates/Gulshan.pdf" class="resume-link">Resume 2</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+    <script src="hire-me.js"></script>
+</div>
+</body>
+</html>

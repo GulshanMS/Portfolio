@@ -1,0 +1,127 @@
+/* Contact Styles */
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 60%; /* Reduced the width of the entire contact section */
+    margin: auto;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 80%; /* Adjusted width to fit in the reduced container */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px; /* Added padding for better spacing */
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    margin: 0 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Shadow for better emphasis */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+}
+
+/* New Box Styling */
+.carousel-item a {
+    display: inline-block;
+    background-color: #004d00; /* Dark Green Color */
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-item a:hover {
+    background-color: #003300; /* Slightly Darker Green */
+}
+
+/* Improved Styling */
+.carousel-item img {
+    width: 80px; /* Reduced image size */
+    height: 80px; /* Reduced image size */
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.carousel-item h3 {
+    margin: 8px 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.carousel-item p {
+    margin: 4px 0;
+    font-size: 16px;
+    color: #555;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.carousel-btn.left {
+    left: 10px;
+}
+
+.carousel-btn.right {
+    right: 10px;
+}
+
+.carousel-btn:hover {
+    background-color: #0056b3;
+}
+
+.carousel-btn:active {
+    transform: scale(0.9);
+}
+
+/* Animations */
+.carousel-item:nth-child(1) {
+    animation: fadeIn 0.5s forwards;
+}
+
+.carousel-item:nth-child(2) {
+    animation: fadeIn 1s forwards;
+}
+
+.carousel-item:nth-child(3) {
+    animation: fadeIn 1.5s forwards;
+}
+
+.carousel-item:nth-child(4) {
+    animation: fadeIn 2s forwards;
+}
+
+.carousel-item:nth-child(5) {
+    animation: fadeIn 2.5s forwards;
+}
+
+.carousel-item:nth-child(6) {
+    animation: fadeIn 3s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}

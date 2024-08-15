@@ -1,0 +1,194 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0; /* Light grey background for a clean look */
+    color: #333; /* Dark text color for readability */
+    transition: background-color 0.5s, color 0.5s; /* Smooth color transitions */
+}
+
+/* Container */
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar with Full-Height Banner/Pennant Shape */
+.sidebar {
+    background: rgba(0, 0, 0, 0.8); /* Dark glass effect */
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh; /* Full height of the viewport */
+    backdrop-filter: blur(10px); /* Blur effect for the glassy look */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+    transition: transform 0.3s, clip-path 0.3s; /* Smooth transition */
+    transform: translateX(0);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%); /* Extends the banner shape to the bottom */
+}
+
+.sidebar-toggle {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    position: absolute;
+    top: 20px;
+    right: -40px; /* Position outside the sidebar */
+    cursor: pointer;
+    transition: color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+.sidebar-toggle:hover {
+    color: #ccc;
+    transform: rotate(180deg); /* Rotate effect on hover */
+}
+
+.nav-list {
+    list-style: none;
+    margin-top: 40px;
+}
+
+.nav-item {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #ff6f00, #ff9100); /* Gradient background */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.nav-item:hover {
+    background: #ff5722; /* Darker color on hover */
+    color: #fff;
+}
+
+/* Arrow Toggle */
+.arrow-toggle {
+    position: fixed;
+    top: 20px; /* Positioned at the top */
+    right: -40px; /* Arrow positioned outside the sidebar */
+    background: linear-gradient(135deg, #007aff, #00d084); /* Gradient background */
+    color: #ffffff;
+    font-size: 24px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background 0.3s, color 0.3s;
+    z-index: 1000;
+    transform: translateY(0%);
+}
+
+.arrow-toggle:hover {
+    background: linear-gradient(135deg, #0051a2, #00a368); /* Hover gradient */
+}
+
+/* Main Content */
+main {
+    flex-grow: 1;
+    margin-left: 250px; /* Space for sidebar */
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Profile Container */
+.profile-container {
+    background: linear-gradient(135deg, #ffffff, #e0f7fa); /* Light gradient background */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    transition: background 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+/* Profile Container Hover Effect */
+.profile-container:hover {
+    background: linear-gradient(135deg, #b2ebf2, #e0f2f1); /* Lighter gradient on hover */
+    transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+/* Profile Photo */
+.profile-photo {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 8px solid #ff4081; /* Vibrant pink border */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transition for hover effect */
+}
+
+/* Profile Photo Hover Effect */
+.profile-photo:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3); /* Shadow effect on hover */
+}
+
+/* Name */
+.name {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #4a148c; /* Deep purple color */
+}
+
+/* About Me */
+.about-me {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #424242; /* Dark gray color for better readability */
+}
+
+/* Section */
+.section {
+    text-align: center;
+    background: #fff; /* White background for sections */
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+.section:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+/* Navigation List */
+.nav-list {
+    list-style: none;
+    margin-top: 0; /* Remove top margin */
+}
+
+/* Navigation Items */
+.nav-item {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    padding: 15px 20px; /* More padding for better spacing */
+    margin-bottom: 10px;
+    border-radius: 8px; /* Rounded corners */
+    background: linear-gradient(135deg, #4a90e2, #50e3c2); /* Smooth gradient background */
+    transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+.nav-item:hover {
+    background: linear-gradient(135deg, #007aff, #00d084); /* Gradient change on hover */
+    color: #ffffff;
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+
+
