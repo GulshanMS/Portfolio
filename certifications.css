@@ -2,9 +2,9 @@
 .carousel {
     position: relative;
     overflow: hidden;
-    width: calc(100% - 50px); /* Adjusted to account for sidebar width */
+    width: calc(100% - 50px); /* No change to width */
     margin: 20px auto; /* Centered with margin */
-    background-color: #f4f4f4;
+    background-color: #f0f4f8; /* Light blue-gray background */
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -17,36 +17,39 @@
 }
 
 .carousel-item {
-    min-width: 80%; /* Reduced width to avoid overlap */
+    min-width: 80%; /* Maintained original width */
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 15px; /* Reduced padding */
-    background-color: white;
+    padding: 15px;
+    background-color: #ffffff; /* White background for certificates */
     border-radius: 10px;
-    margin: 0 10px; /* Margin for spacing */
+    margin: 0 10px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, opacity 0.3s ease;
     opacity: 1;
-    height: 300px; /* Reduced height */
-    overflow: auto; /* Scrollable content */
+    height: 450px; /* Increased height only */
+    overflow: hidden; /* Ensure content doesn't overflow */
 }
 
 .carousel-item img {
-    width: 70%; /* Reduced width for better fit */
+    width: 80%; /* Increased width */
     height: auto;
-    max-width: 250px; /* Limit image size */
+    max-width: 300px; /* Increased max width */
+    max-height: 200px; /* Added max height */
     border-radius: 10px;
-    margin-bottom: 10px; /* Reduced margin */
+    margin-bottom: 10px;
 }
 
 .carousel-item p {
     margin: 8px 0;
-    font-size: 14px; /* Reduced font size */
-    color: #555;
+    font-size: 14px;
+    color: #333; /* Darker text color */
+    overflow-y: auto; /* Enable vertical scrolling if text overflows */
+    max-height: 150px; /* Limit the height of the text box */
 }
 
 .carousel-btn {
@@ -56,25 +59,25 @@
     background-color: #007bff;
     color: white;
     border: none;
-    padding: 8px; /* Reduced padding */
+    padding: 8px;
     cursor: pointer;
     z-index: 10;
     border-radius: 50%;
-    font-size: 18px; /* Reduced font size */
+    font-size: 18px;
     transition: background-color 0.3s ease, transform 0.3s ease;
-    width: 35px; /* Reduced width */
-    height: 35px; /* Reduced height */
+    width: 35px;
+    height: 35px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .carousel-btn.left {
-    left: 15px; /* Adjusted positioning */
+    left: 15px;
 }
 
 .carousel-btn.right {
-    right: 15px; /* Adjusted positioning */
+    right: 15px;
 }
 
 .carousel-btn:hover {
@@ -83,4 +86,66 @@
 
 .carousel-btn:active {
     transform: scale(0.9);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .carousel-item {
+        min-width: 100%; /* Use full width on smaller screens */
+        height: auto; /* Auto height to accommodate content */
+        padding: 10px; /* Slightly reduced padding */
+    }
+
+    .carousel-item img {
+        max-width: 220px; /* Slightly smaller images on mobile */
+        max-height: 150px; /* Adjusted max height for mobile */
+    }
+
+    .carousel-item p {
+        font-size: 13px; /* Slightly smaller text */
+        max-height: 100px; /* Adjusted height for mobile */
+    }
+
+    .carousel-btn {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+    }
+
+    .carousel {
+        width: calc(100% - 30px); /* Adjusted width for mobile */
+        padding: 15px; /* Adjusted padding for mobile */
+    }
+
+    .carousel-track {
+        padding-bottom: 10px; /* Space for scroll on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-item {
+        min-width: 100%; /* Full width on very small screens */
+        padding: 8px; /* Less padding for small screens */
+    }
+
+    .carousel-item img {
+        max-width: 200px; /* Further reduce image size */
+        max-height: 140px; /* Adjust height */
+    }
+
+    .carousel-item p {
+        font-size: 12px; /* Smaller font for very small screens */
+        max-height: 90px; /* Further reduced text box height */
+    }
+
+    .carousel-btn {
+        width: 28px;
+        height: 28px;
+        font-size: 14px;
+    }
+
+    .carousel {
+        width: 100%; /* Full width on very small screens */
+        padding: 10px; /* Less padding for small screens */
+    }
 }
